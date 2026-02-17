@@ -20,7 +20,7 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./  # Qué carpeta de tu repo subir (./ es todo)
-        server-dir: ./ # Dónde ponerlo en Hostinger (IMPORTANTE)
+        server-dir: / # Dónde ponerlo en Hostinger (IMPORTANTE)
         exclude: | # Archivos que NO quieres subir
           **/.git*
           **/.github*
