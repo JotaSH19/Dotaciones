@@ -20,7 +20,7 @@
         extend: {
           colors: {
             royal: {
-              500: '#4169E1', /* Azul Rey estándar */
+              500: '#CFCFC9', /* Azul Rey estándar */
               600: '#2563EB',
               700: '#1d4ed8',
               800: '#1e40af', /* Azul Rey oscuro para textos/hover */
@@ -62,13 +62,14 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-20">
       <!-- Logo -->
-      <div class="flex-shrink-0 flex items-center">
-        <a href="#" class="flex items-center gap-2">
-          <!-- Icono simulando Logo -->
-          <div class="bg-royal-700 text-white p-2 rounded font-bold text-xl">HG</div>
-          <span class="font-bold text-2xl text-royal-800 tracking-tight">DOTACIONES</span>
-        </a>
-      </div>
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="flex items-center gap-2">
+                        <!-- Logo desde la carpeta img -->
+                        <img src="/src/img/logohg.png" alt="Logo HG Dotaciones" class="h-24 w-auto object-contain">
+                        <!-- Nota: Si tu imagen de logo ya incluye la palabra "DOTACIONES", puedes borrar la siguiente línea (span) -->
+                        <!--<span class="font-bold text-2xl text-royal-800 tracking-tight">DOTACIONES</span> -->
+                    </a>    
+                </div>
 
       <!-- Menú Desktop -->
       <div class="hidden md:flex items-center space-x-8">
@@ -133,7 +134,9 @@
         <span class="text-royal-600 font-bold uppercase tracking-wider text-sm">Sobre HG Dotaciones</span>
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">Compromiso Integral con la Industria</h2>
         <p class="text-gray-600 text-lg leading-relaxed mb-6">
-          Somos una empresa dedicada a la comercialización y distribución de dotaciones empresariales y suministros industriales. Entendemos que la imagen y la seguridad de sus colaboradores son fundamentales para el éxito de su operación.
+          En HG Dotaciones somos una empresa especializada en la fabricación y comercialización de dotaciones empresariales. Trabajamos con materiales de alta calidad y procesos cuidadosamente supervisados para garantizar prendas resistentes, funcionales y con excelente presentación.
+Nos enfocamos en ofrecer soluciones integrales para empresas de todos los sectores: industrial, corporativo, salud, alimentos, servicios generales y logística.
+Nuestra prioridad es que cada uniforme proyecte profesionalismo, seguridad y confianza.
         </p>
         <ul class="space-y-4">
           <li class="flex items-start">
@@ -163,18 +166,20 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
       <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Nuestras Líneas de Producto</h2>
-      <p class="mt-4 text-xl text-gray-500">Todo lo que tu empresa necesita en un solo lugar.</p>
+      <p class="mt-4 text-xl text-gray-500">En HG Dotaciones ofrecemos bordado y estampado con el logo de tu empresa para fortalecer la identidad corporativa y la imagen profesional de tu equipo.
+
+Trabajamos cada detalle para que tu marca se vea impecable en cada prenda.</p>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       <!-- Card 1 -->
       <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 group">
-        <div class="h-48 overflow-hidden bg-gray-200">
-          <img src="https://images.unsplash.com/photo-1617135002078-43d937a85df7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dotación Industrial" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+        <div class="h-72 overflow-hidden bg-gray-200">
+          <img src="src/img/Polo.png" alt="Dotación Industrial" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-bold text-gray-900 mb-2">Dotación Industrial</h3>
-          <p class="text-gray-600 text-sm mb-4">Overoles, jeans, camisas.</p>
+          <p class="text-gray-600 text-sm mb-4">Polos, overoles, jeans, camisas.</p>
           <a href="#catalogo" class="text-royal-600 font-semibold hover:text-royal-800 flex items-center">
             Ver más <i class="fas fa-arrow-right ml-2 text-xs"></i>
           </a>
@@ -183,8 +188,8 @@
 
       <!-- Card 2 -->
       <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 group">
-        <div class="h-48 overflow-hidden bg-gray-200">
-          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Calzado de Seguridad" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+        <div class="h-72 overflow-hidden bg-gray-200">
+          <img src="src/img/Botas.png" alt="Calzado de Seguridad" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-bold text-gray-900 mb-2">Calzado de Seguridad</h3>
@@ -197,8 +202,8 @@
 
       <!-- Card 3 -->
       <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 group">
-        <div class="h-48 overflow-hidden bg-gray-200">
-          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Línea Salud" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+        <div class="h-72 overflow-hidden bg-gray-200">
+          <img src="src/img/Aseo.png" alt="Línea Salud" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-bold text-gray-900 mb-2">Línea Salud y Aseo</h3>
@@ -211,8 +216,8 @@
 
       <!-- Card 4 -->
       <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 group">
-        <div class="h-48 overflow-hidden bg-gray-200">
-          <img src="https://images.unsplash.com/photo-1584036561566-b93a50208c3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="EPP" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+        <div class="h-72 overflow-hidden bg-gray-200">
+          <img src="src/img/Alimentos.png" alt="EPP" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-bold text-gray-900 mb-2">Linea de manejo de alimentos</h3>
@@ -235,137 +240,88 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
     <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">¿Buscas algo específico?</h2>
     <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
-      Descarga nuestro catálogo completo en PDF con referencias técnicas, tallas y especificaciones de todos nuestros productos.
+      Solicita nuestro catálogo completo en PDF con referencias técnicas, tallas y especificaciones de todos nuestros productos.
     </p>
-    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <button onclick="descargarCatalogo()" class="bg-white text-royal-800 px-8 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition flex items-center justify-center gap-2">
-        <i class="fas fa-download"></i> Descargar Catálogo
-      </button>
-      <button onclick="window.location.href='#contacto'" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-royal-700 transition">
-        Contactar Asesor
-      </button>
-    </div>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <!-- Botón modificado para abrir WhatsApp -->
+                <a href="https://wa.me/573232100257?text=Hola,%20estoy%20interesado%20en%20recibir%20el%20catálogo%20de%20productos." target="_blank" class="bg-white text-royal-800 px-8 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp text-green-500 text-xl"></i> Pedir Catálogo
+                </a>
+            </div>
   </div>
 </section>
 
-<!-- Sección Contacto -->
-<section id="contacto" class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Contáctanos</h2>
-      <p class="mt-4 text-gray-500">Estamos listos para equipar a tu empresa. Solicita tu cotización hoy.</p>
-    </div>
-
-    <div class="grid lg:grid-cols-2 gap-12">
-      <!-- Formulario -->
-      <div class="bg-lightgray-50 p-8 rounded-2xl shadow-sm border border-gray-100">
-        <form onsubmit="enviarFormulario(event)">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div>
-              <label class="block text-gray-700 font-medium mb-2" for="nombre">Nombre Completo</label>
-              <input type="text" id="nombre" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-royal-500 focus:ring-2 focus:ring-royal-200 outline-none transition" placeholder="Tu nombre" required>
+    <!-- Sección Contacto (Sin Formulario) -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Información de Contacto</h2>
+                <p class="mt-4 text-gray-500 text-lg">Estamos listos para equipar a tu empresa. Contáctanos por cualquiera de nuestros canales.</p>
             </div>
-            <div>
-              <label class="block text-gray-700 font-medium mb-2" for="empresa">Empresa</label>
-              <input type="text" id="empresa" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-royal-500 focus:ring-2 focus:ring-royal-200 outline-none transition" placeholder="Nombre de tu empresa">
+
+            <div class="grid md:grid-cols-2 gap-8 text-center mb-12">               
+                <!-- Teléfonos -->
+                <div class="flex flex-col items-center p-6 bg-lightgray-50 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div class="bg-royal-100 text-royal-700 p-5 rounded-full mb-5">
+                        <i class="fas fa-phone-alt text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">Teléfono</h4>
+                    <p class="text-gray-600">+57 3232100257</p>
+                </div>
+
+                <!-- Correo -->
+                <div class="flex flex-col items-center p-6 bg-lightgray-50 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div class="bg-royal-100 text-royal-700 p-5 rounded-full mb-5">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">Correo</h4>
+                    <p class="text-gray-600">@hgdotaciones.com</p>
+                </div>
             </div>
-          </div>
-          <div class="mb-6">
-            <label class="block text-gray-700 font-medium mb-2" for="email">Correo Electrónico</label>
-            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-royal-500 focus:ring-2 focus:ring-royal-200 outline-none transition" placeholder="tucorreo@empresa.com" required>
-          </div>
-          <div class="mb-6">
-            <label class="block text-gray-700 font-medium mb-2" for="mensaje">Mensaje / Requerimiento</label>
-            <textarea id="mensaje" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-royal-500 focus:ring-2 focus:ring-royal-200 outline-none transition" placeholder="Describe los productos que necesitas..." required></textarea>
-          </div>
-          <button type="submit" class="w-full bg-royal-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-royal-800 transition duration-300 shadow-md">
-            Enviar Mensaje
-          </button>
-        </form>
-      </div>
-
-      <!-- Información de Contacto -->
-      <div class="flex flex-col justify-center space-y-8">
-        <div class="flex items-start">
-          <div class="bg-royal-100 text-royal-700 p-4 rounded-full mr-5">
-            <i class="fas fa-map-marker-alt text-xl"></i>
-          </div>
-          <div>
-            <h4 class="text-xl font-bold text-gray-900">Ubicación</h4>
-            <p class="text-gray-600">Calle 123 #45-67, Zona Industrial<br>Ciudad, Colombia</p>
-          </div>
         </div>
+    </section>
 
-        <div class="flex items-start">
-          <div class="bg-royal-100 text-royal-700 p-4 rounded-full mr-5">
-            <i class="fas fa-phone-alt text-xl"></i>
-          </div>
-          <div>
-            <h4 class="text-xl font-bold text-gray-900">Teléfonos</h4>
-            <p class="text-gray-600">+57 (601) 123 4567<br>+57 300 123 4567</p>
-          </div>
-        </div>
-
-        <div class="flex items-start">
-          <div class="bg-royal-100 text-royal-700 p-4 rounded-full mr-5">
-            <i class="fas fa-envelope text-xl"></i>
-          </div>
-          <div>
-            <h4 class="text-xl font-bold text-gray-900">Correo</h4>
-            <p class="text-gray-600">laura.gama@hgdotaciones.com<br>pruebasd</p>
-          </div>
-        </div>
-
-        <!-- Botón WhatsApp grande en contacto -->
-        <a href="https://wa.me/573000000000" target="_blank" class="mt-6 bg-[#25D366] text-white py-4 px-6 rounded-lg font-bold hover:bg-green-600 transition flex items-center justify-center gap-3 w-full sm:w-auto self-start shadow-md">
-          <i class="fab fa-whatsapp text-2xl"></i>
-          Chat Directo WhatsApp
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- Footer -->
-<footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid md:grid-cols-3 gap-8 mb-8">
-      <div>
-        <h3 class="text-white text-2xl font-bold mb-4">HG DOTACIONES</h3>
-        <p class="text-sm">Su aliado estratégico en seguridad industrial e imagen corporativa. Calidad garantizada en cada entrega.</p>
-      </div>
-      <div>
-        <h4 class="text-white font-bold mb-4">Enlaces Rápidos</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="#inicio" class="hover:text-white transition">Inicio</a></li>
-          <li><a href="#catalogo" class="hover:text-white transition">Catálogo</a></li>
-          <li><a href="#productos" class="hover:text-white transition">Productos</a></li>
-          <li><a href="#" class="hover:text-white transition">Política de Datos</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="text-white font-bold mb-4">Síguenos</h4>
-        <div class="flex space-x-4">
-          <a href="#" class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-royal-700 transition text-white">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-royal-700 transition text-white">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-royal-700 transition text-white">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white text-2xl font-bold mb-4">HG DOTACIONES</h3>
+                    <p class="text-sm">Su aliado estratégico en seguridad industrial e imagen corporativa. Calidad garantizada en cada entrega.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#inicio" class="hover:text-white transition">Inicio</a></li>
+                        <li><a href="#catalogo" class="hover:text-white transition">Catálogo</a></li>
+                        <li><a href="#productos" class="hover:text-white transition">Productos</a></li>
+                        <li><a href="#" class="hover:text-white transition">Política de Datos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Información de Interés</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="far fa-clock mt-1 text-royal-500"></i>
+                            <span><strong>Lunes a Viernes:</strong><br>8:00 AM - 6:00 PM</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-truck mt-1 text-royal-500"></i>
+                            <span>Envíos seguros a nivel nacional.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2026 HG Dotaciones y Suministros. Todos los derechos reservados.</p>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="border-t border-gray-800 pt-8 text-center text-sm">
-      <p>&copy; 2026 HG Dotaciones y Suministros. Todos los derechos reservados.</p>
-    </div>
-  </div>
-</footer>
+    </footer>
 
 <!-- Botón Flotante de WhatsApp -->
-<a href="https://wa.me/573000000000" target="_blank" class="whatsapp-float fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-xl hover:bg-green-600 transition-all transform hover:scale-110" aria-label="Contactar por WhatsApp">
+<a href="https://wa.me/573232100257?text=Hola,%20estoy%20interesado%20en%20recibir%20el%20catálogo%20de%20productos." target="_blank" class="whatsapp-float fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-xl hover:bg-green-600 transition-all transform hover:scale-110" aria-label="Contactar por WhatsApp">
   <i class="fab fa-whatsapp text-4xl"></i>
 </a>
 
