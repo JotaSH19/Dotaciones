@@ -338,40 +338,53 @@ Trabajamos cada detalle para que tu marca se vea impecable en cada prenda.</p>
   <i class="fab fa-whatsapp text-4xl"></i>
 </a>
 
-<!-- Scripts JavaScript -->
-<script>
-  // Función para el menú móvil
-  function toggleMenu() {
-    const menu = document.getElementById('mobile-menu');
-    if (menu.classList.contains('hidden')) {
-      menu.classList.remove('hidden');
-    } else {
-      menu.classList.add('hidden');
-    }
-  }
+   <!-- Scripts JavaScript -->
+    <script>
+        // Función para el menú móvil
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        }
 
-  // Simulación de envío de formulario
-  function enviarFormulario(event) {
-    event.preventDefault();
-    const btn = event.target.querySelector('button');
-    const originalText = btn.innerText;
+        // Lógica para enviar el formulario real mediante Formspree
+        async function enviarFormulario(event) {
+            event.preventDefault();
+            const form = event.target;
+            const btn = form.querySelector('button');
+            const originalText = btn.innerText;
+            
+            btn.innerText = 'Enviando...';
+            btn.classList.add('opacity-75', 'cursor-not-allowed');
+            
+            // IMPORTANTE: Debes registrarte en formspree.io y reemplazar esta URL con la tuya
+            const endpoint = "https://formspree.io/f/mpqjkqon"; 
 
-    btn.innerText = 'Enviando...';
-    btn.classList.add('opacity-75', 'cursor-not-allowed');
+            try {
+                const response = await fetch(endpoint, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
 
-    setTimeout(() => {
-      alert('¡Gracias por contactarnos! Hemos recibido tu solicitud y un asesor de HG Dotaciones se pondrá en contacto contigo pronto.');
-      event.target.reset();
-      btn.innerText = originalText;
-      btn.classList.remove('opacity-75', 'cursor-not-allowed');
-    }, 1500);
-  }
-
-  // Simulación descarga catálogo
-  function descargarCatalogo() {
-    alert('Iniciando descarga del Catálogo PDF...');
-    // Aquí iría la lógica real: window.open('ruta/catalogo.pdf');
-  }
-</script>
+                if (response.ok) {
+                    alert('¡Gracias por contactarnos! Hemos recibido tu solicitud y nos comunicaremos pronto.');
+                    form.reset();
+                } else {
+                    alert('Hubo un pequeño problema al enviar el formulario. Por favor, intenta de nuevo o escríbenos por WhatsApp.');
+                }
+            } catch (error) {
+                alert('Hubo un error de conexión. Por favor, revisa tu internet.');
+            } finally {
+                btn.innerText = originalText;
+                btn.classList.remove('opacity-75', 'cursor-not-allowed');
+            }
+        }
+    </script>
 </body>
 </html>
