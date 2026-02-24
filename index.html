@@ -251,39 +251,48 @@ Trabajamos cada detalle para que tu marca se vea impecable en cada prenda.</p>
   </div>
 </section>
 
-    <!-- Sección Contacto (Sin Formulario) -->
+   <!-- Sección Contacto -->
     <section id="contacto" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Información de Contacto</h2>
-                <p class="mt-4 text-gray-500 text-lg">Estamos listos para equipar a tu empresa. Contáctanos por cualquiera de nuestros canales.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Contáctanos</h2>
+                <p class="mt-4 text-gray-500 text-lg">Estamos listos para equipar a tu empresa. Solicita tu cotización hoy.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8 text-center mb-12">               
-                <!-- Teléfonos -->
-                <div class="flex flex-col items-center p-6 bg-lightgray-50 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="bg-royal-100 text-royal-700 p-5 rounded-full mb-5">
-                        <i class="fas fa-phone-alt text-2xl"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-2">Teléfono</h4>
-                    <p class="text-gray-600">+57 3232100257</p>
-                </div>
-
-                <!-- Correo -->
-                <div class="flex flex-col items-center p-6 bg-lightgray-50 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="bg-royal-100 text-royal-700 p-5 rounded-full mb-5">
-                        <i class="fas fa-envelope text-2xl"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-2">Correo</h4>
-                    <p class="text-gray-600">@hgdotaciones.com</p>
+            <div class="max-w-3xl mx-auto">
+                <!-- Formulario -->
+                <div class="bg-lightgray-50 p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <form onsubmit="enviarFormulario(event)">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2" for="nombre">Nombre Completo</label>
+                                <input type="text" id="nombre" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-royal-500 focus:ring-2 focus:ring-royal-200 outline-none transition" placeholder="Tu nombre" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2" for="empresa">Empresa</label>
+                                <input type="text" id="empresa" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-royal-500 focus:ring-2 focus:ring-royal-200 outline-none transition" placeholder="Nombre de tu empresa">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-medium mb-2" for="email">Correo Electrónico</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-royal-500 focus:ring-2 focus:ring-royal-200 outline-none transition" placeholder="tucorreo@empresa.com" required>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-medium mb-2" for="mensaje">Mensaje / Requerimiento</label>
+                            <textarea id="mensaje" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-royal-500 focus:ring-2 focus:ring-royal-200 outline-none transition" placeholder="Describe los productos que necesitas..." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-royal-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-royal-800 transition duration-300 shadow-md">
+                            Enviar Mensaje
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-
 <!-- Footer -->
     <!-- Footer -->
+      <!-- Footer -->
     <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-3 gap-8 mb-8">
@@ -304,12 +313,16 @@ Trabajamos cada detalle para que tu marca se vea impecable en cada prenda.</p>
                     <h4 class="text-white font-bold mb-4">Información de Interés</h4>
                     <ul class="space-y-3 text-sm">
                         <li class="flex items-start gap-3">
+                            <i class="fas fa-phone-alt mt-1 text-royal-500"></i>
+                            <span><strong>Teléfonos:</strong><br>+57 323 210 0257</span>
+                        </li>
+                        <li class="flex items-start gap-3">
                             <i class="far fa-clock mt-1 text-royal-500"></i>
                             <span><strong>Lunes a Viernes:</strong><br>8:00 AM - 6:00 PM</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i class="fas fa-truck mt-1 text-royal-500"></i>
-                            <span>Envíos seguros a nivel nacional.</span>
+                            <span>Envíos seguros a nivel nacional con cumplimiento en tiempos de entrega.</span>
                         </li>
                     </ul>
                 </div>
