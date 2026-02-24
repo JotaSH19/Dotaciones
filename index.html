@@ -388,6 +388,19 @@ Trabajamos cada detalle para que tu marca se vea impecable en cada prenda.</p>
             }
         }
 
+                // Funciones para abrir y cerrar el modal de Política de Datos
+        function abrirPolitica(event) {
+            if(event) event.preventDefault();
+            document.getElementById('politica-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Evita que el fondo haga scroll
+        }
+
+        function cerrarPolitica() {
+            document.getElementById('politica-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Restaura el scroll
+        }
+
+
         // Lógica para enviar el formulario real mediante Formspree
         async function enviarFormulario(event) {
             event.preventDefault();
