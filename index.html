@@ -339,7 +339,43 @@ Trabajamos cada detalle para que tu marca se vea impecable en cada prenda.</p>
 <a href="https://wa.me/573232100257?text=Hola,%20estoy%20interesado%20en%20recibir%20el%20catálogo%20de%20productos." target="_blank" class="whatsapp-float fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-xl hover:bg-green-600 transition-all transform hover:scale-110" aria-label="Contactar por WhatsApp">
   <i class="fab fa-whatsapp text-4xl"></i>
 </a>
+    <!-- Modal Política de Datos -->
+    <div id="politica-modal" class="fixed inset-0 z-[60] hidden bg-black bg-opacity-60 flex items-center justify-center px-4">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-2xl max-h-[80vh] flex flex-col overflow-hidden transform transition-all">
+            <!-- Header Modal -->
+            <div class="px-6 py-4 border-b border-gray-200 flex justify-between items-center bg-gray-50">
+                <h3 class="text-xl font-bold text-gray-900">Política de Tratamiento de Datos</h3>
+                <button onclick="cerrarPolitica()" class="text-gray-400 hover:text-gray-700 focus:outline-none">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <!-- Body Modal (Contenido de la política) -->
+            <div class="px-6 py-6 overflow-y-auto flex-grow text-gray-600 text-sm space-y-4">
+                <p>En cumplimiento de la normativa legal vigente sobre protección de datos personales (Ley 1581 de 2012 y el Decreto 1377 de 2013), <strong>HG Dotaciones y Suministros</strong> informa a sus clientes y usuarios sobre su política de privacidad:</p>
+                
+                <h4 class="font-bold text-gray-800 mt-4">1. Finalidad de la recolección de datos</h4>
+                <p>Los datos personales (nombre, correo, empresa, teléfono) suministrados a través de nuestros formularios o canales de WhatsApp serán utilizados exclusivamente para:</p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Enviar cotizaciones y atender requerimientos de nuestros clientes.</li>
+                    <li>Compartir nuestro catálogo de productos y servicios.</li>
+                    <li>Mantener un contacto comercial directo y mejorar nuestro servicio al cliente.</li>
+                </ul>
 
+                <h4 class="font-bold text-gray-800 mt-4">2. Derechos del Titular</h4>
+                <p>Usted, como titular de los datos, tiene derecho a conocer, actualizar, rectificar y solicitar la supresión de su información de nuestras bases de datos en cualquier momento.</p>
+                
+                <h4 class="font-bold text-gray-800 mt-4">3. Seguridad de la Información</h4>
+                <p>HG Dotaciones y Suministros se compromete a proteger la privacidad de sus datos. No comercializaremos, cederemos ni distribuiremos la información personal recopilada a terceros sin su consentimiento explícito.</p>
+                
+                <h4 class="font-bold text-gray-800 mt-4">4. Canales de Atención</h4>
+                <p>Para ejercer sus derechos sobre sus datos personales o en caso de dudas sobre esta política, puede comunicarse con nosotros a través de los teléfonos indicados en este sitio web o escribirnos directamente a nuestros correos de atención.</p>
+            </div>
+            <!-- Footer Modal -->
+            <div class="px-6 py-4 border-t border-gray-200 bg-gray-50 text-right">
+                <button onclick="cerrarPolitica()" class="bg-royal-700 text-white px-6 py-2 rounded font-bold hover:bg-royal-800 transition shadow">Entendido</button>
+            </div>
+        </div>
+    </div>
    <!-- Scripts JavaScript -->
     <script>
         // Función para el menú móvil
